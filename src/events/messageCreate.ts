@@ -56,7 +56,9 @@ export default {
           );
         } else {
           const data = (await response.json()) as MiiboResponse;
-          await message.reply(data.bestResponse.utterance);
+          await message.reply(
+            data.bestResponse.utterance.replaceAll('。', '　'),
+          );
         }
       } catch (error) {
         console.error('Fetch error:', error);
