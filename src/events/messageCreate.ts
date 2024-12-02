@@ -33,10 +33,10 @@ export default {
 
       // Prepare the payload for the fetch request
       const payload = {
-        api_key: process.env.MEBO_API_KEY,
-        agent_id: process.env.MEBO_AGENT_ID,
+        api_key: process.env.MIIBO_API_KEY,
+        agent_id: process.env.MIIBO_AGENT_ID,
         utterance: contentWithoutMention,
-        uid: process.env.MEBO_UID,
+        uid: process.env.MIIBO_UID,
       };
 
       // Send the fetch request
