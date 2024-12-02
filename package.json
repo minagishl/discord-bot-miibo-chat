@@ -1,7 +1,7 @@
 {
-  "name": "discord-gpt-ts",
+  "name": "discord-bot-miibo-chat",
   "version": "0.1.0",
-  "description": "This is a Discord Bot template created in TypeScript, the key is that it is easy to manage!",
+  "description": "A chat bot built using miibo and running on Discord.",
   "license": "MIT",
   "author": "minagishl",
   "type": "commonjs",
