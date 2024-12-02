@@ -1,4 +1,8 @@
 import { Events, type Interaction } from 'discord.js';
+import dotenv from 'dotenv';
+
+// Load the environment variables
+dotenv.config();
 
 // Map to keep track of user rate limits
 const rateLimitMap = new Map();
