@@ -26,6 +26,14 @@ export default {
   async execute(message: Message): Promise<void> {
     // Check if the message mentions the bot
     if (message.mentions.has(message.client.user)) {
+      // Ignore messages containing @here or @everyone
+      if (
+        message.content.includes('@here') ||
+        message.content.includes('@everyone')
+      ) {
+        return;
+      }
+      
       if (message.inGuild() && message.channel.isTextBased()) {
         void message.channel.sendTyping();
       }
